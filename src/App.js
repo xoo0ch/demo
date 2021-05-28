@@ -10,19 +10,20 @@ function App() {
       setDropdown(!dropdown);
     }
     const accionPrueba=()=>{
-      alert("SoyPrueba");
+      alert(<a  href="http://www.fca.uaemex.mx/">Página Oficial</a> );
     }
   return (
     <div className="App">
       
       <CarouselContainer/>
       <Dropdown isOpen={dropdown} toggle={abrirCerrarDropdown} direction="up" >
-      <DropdownToggle caret className="botonDropdown">
+      <DropdownToggle caret className="botonDropdown"> 
+     
         INFORMATE MÁS...
       </DropdownToggle>
 
       <DropdownMenu>
-        <DropdownItem onClick={()=>accionPrueba()}><center>FAC</center></DropdownItem>
+        <DropdownItem onClick={()=>accionPrueba()}><center>FAC</center></DropdownItem> <center> <a  href="http://www.fca.uaemex.mx/">Página Oficial</a> </center>
         <DropdownItem divider/>
         <DropdownItem><center>BECAS Y SERVICIO SOCIAL</center></DropdownItem>
         <DropdownItem divider/>

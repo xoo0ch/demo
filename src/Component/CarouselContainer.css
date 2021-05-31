@@ -1,28 +1,28 @@
 h3{
     color: #297239;
-    font: 'Century Gothic', Arial, sans-serif;
+    font: 'Roboto';
 
 }
 p{
     color: #caac15
 }
 body{
-    font-family: Verdana;
-    font-family: 'PT Sans';
+    font-family: 'Roboto';
+    font-family: 'Roboto';
 }
 .CarouselContainer {
   border-radius: 60px;
 }
 .img {
     border: solid 10px;
-    border-radius: 10px 40px 40px 10px;
+    border-radius: 50px 40px 40px 10px;
       }
 .Carousel.Item{
     border: solid 10px;
-    border-radius: 10px 40px 40px 10px;
+    border-radius: 50px 40px 40px 10px;
 }
 .Carousel.Caption{
-    font-family: Century Gothic, sans-serif;
+    font-family: 'Roboto';
 }
 
 

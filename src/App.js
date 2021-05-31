@@ -4,26 +4,20 @@ import Fca from './Component/Fca';
 import React, { useState } from 'react';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-
-
 function App() {
-  const [dropdown, setDropdown] = useState(false);
+const [dropdown, setDropdown] = useState(false);
 
   const abrirCerrarDropdown = () => {
     setDropdown(!dropdown);
   }
-  // const accionPrueba = () => {
-  //   alert(<a href="http://www.fca.uaemex.mx/">Página Oficial</a>);
-  // }
-
+ 
   const boton = (
     <Dropdown isOpen={dropdown} toggle={abrirCerrarDropdown} direction="up" >
             <DropdownToggle caret className="botonDropdown">
 
               INFORMATE MÁS...
       </DropdownToggle>
-
-            <DropdownMenu>
+      <DropdownMenu>
               <DropdownItem ><center>FAC</center></DropdownItem> <center> <Link to={"/fca"}>Página Oficial</Link></center>
               <DropdownItem divider />
               <DropdownItem><center>SERVICIO SOCIAL</center></DropdownItem> <center> <a href="http://sev.uaemex.mx/index.php/servicios/servicio-social">Servicio Social</a> </center>
@@ -48,6 +42,5 @@ function App() {
       </Switch>
     </Router>
   );
-}
-
+  }
 export default App;

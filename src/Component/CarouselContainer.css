@@ -10,3 +10,19 @@ body{
     font-family: Verdana;
     font-family: 'PT Sans';
 }
+.CarouselContainer {
+  border-radius: 60px;
+}
+.img {
+    border: solid 10px;
+    border-radius: 10px 40px 40px 10px;
+      }
+.Carousel.Item{
+    border: solid 10px;
+    border-radius: 10px 40px 40px 10px;
+}
+.Carousel.Caption{
+    font-family: Century Gothic, sans-serif;
+}
+
+

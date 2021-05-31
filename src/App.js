@@ -1,9 +1,11 @@
 import './App.css';
-import CarouselContainer from './Component/CarouselContainer';
-import Fca from './Component/Fca';
+// React imports
 import React, { useState } from 'react';
-import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+// Component Imports
+import CarouselContainer from './Component/CarouselContainer';
+import Cards from './Component/Cards'
 
 export default function App() {
 
@@ -20,7 +22,7 @@ export default function App() {
         INFORMATE MÁS...
               </DropdownToggle>
       <DropdownMenu>
-        <DropdownItem ><center>FAC</center></DropdownItem> <center> <Link to={"/fca"}>Página Oficial</Link></center>
+        <DropdownItem ><center>FAC</center></DropdownItem> <center> <Link to={"/Cards"}>Página Oficial</Link></center>
         <DropdownItem divider />
         <DropdownItem><center>SERVICIO SOCIAL</center></DropdownItem> <center> <a href="http://sev.uaemex.mx/index.php/servicios/servicio-social">Servicio Social</a> </center>
         <DropdownItem divider />
@@ -36,7 +38,7 @@ export default function App() {
         <div className="App">
 
           <Route exact path="/" component={CarouselContainer} />
-          <Route path="/fca" component={Fca} />
+          <Route path="/Cards" component={Cards} />
 
           {boton}
         </div>
